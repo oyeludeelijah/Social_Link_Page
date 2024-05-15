@@ -25,7 +25,7 @@ body {
   border-radius: 1rem;
   padding: 3rem;
   display: inline-block;
-  width: 35rem;
+  width: fit-content;
 }
 
 .avater {
@@ -53,7 +53,8 @@ p {
 }
 
 nav a {
-  padding: 1rem 8rem;
+  padding: 1rem;
+  width: 100%;
   background-color: hsl(0, 0%, 20%);
   text-decoration: none;
   color: hsl(0, 0%, 100%);
@@ -76,4 +77,15 @@ nav a:active {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+@media screen and (max-width: 462px) {
+  body {
+    padding: 0 2rem;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    padding: 1.3;
+  }
 }
